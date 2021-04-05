@@ -16,7 +16,7 @@
 export { default as CamSvg } from './CamSvg';
 export { default as BellSvg } from './BellSvg';
 export { default as AppSvg } from './AppSvg';
-// export { default as MenuSvg } from "./MenuSvg";
+export { default as MenuSvg } from './MenuSvg';
 export { default as SearchSvg } from './SearchSvg';
 // export { default as ReSearchSvg } from "./ReSearchSvg";
 // export { default as BackArrowSvg } from "./BackArrowSvg";

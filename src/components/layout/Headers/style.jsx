@@ -15,11 +15,15 @@ const Headers = styled.div`
     display: flex;
     align-items: center;
 
-    .menu-bar {
-      padding: 8px;
+    .menu-bar-warpper {
       margin-right: 20px;
-      font-size: 20px;
-      cursor: pointer;
+
+      .menu-bar {
+        padding: 8px;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+      }
     }
 
     .logo-image {
@@ -41,14 +45,27 @@ const Headers = styled.div`
     display: flex;
     align-items: center;
 
-    .nav-search {
+    .nav-search-container {
+      display: flex;
       background-color: #121212;
-      color: #979797;
-      border: 1px solid #363636;
-      border-right: none;
-      line-height: 26px;
+
+      padding: 2px 6px 2px 6px;
       width: 100%;
-      padding: 3px 8px 3px 10px;
+      border: 1px solid ${props => (props.inputFocus ? '#2650c5' : '#363636')};
+      border-right: none;
+
+      .nav-search {
+        background-color: inherit;
+        border: none;
+        color: #979797;
+        width: 100%;
+        line-height: 24px;
+        margin-left: 4px;
+        padding: 1px 2px 1px 2px;
+        max-width: 100%;
+        font-size: 1rem;
+        outline: none;
+      }
     }
 
     .nav-btn {
@@ -70,11 +87,13 @@ const Headers = styled.div`
     align-items: center;
     justify-content: center;
 
+    .icon-warpper {
+      margin-right: 8px;
+    }
     .nav-right-icon {
       box-sizing: border-box;
       width: 40px;
       padding: 8px;
-      margin-right: 8px;
       cursor: pointer;
     }
   }
