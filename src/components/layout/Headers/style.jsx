@@ -77,6 +77,30 @@ const Headers = styled.div`
       cursor: pointer;
       width: 75px;
       height: 32px;
+
+      svg {
+        fill: ${props => (props.Theme ? '#ffffff80' : '#333')};
+      }
+    }
+
+    .nav-btn:hover svg {
+      fill: #ffffffcc;
+    }
+
+    .hover-text {
+      position: absolute;
+      display: none;
+      margin-top: 30px;
+      margin-left: 19px;
+      background-color: rgba(89, 89, 89, 0.5);
+      color: #f3f3f5;
+      padding: 7.5px;
+      border-radius: 10%;
+      font-size: 0.85rem;
+    }
+
+    .nav-btn:hover + .hover-text {
+      display: block;
     }
   }
 

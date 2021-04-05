@@ -30,7 +30,7 @@ export default function Header() {
   }
 
   return (
-    <Headers inputFocus={inputFocus}>
+    <Headers inputFocus={inputFocus} Theme>
       <div className="nav">
         <div className="logo">
           {/* <FontAwesomeIcon icon={faBars} className="menu-bar" /> */}
@@ -61,8 +61,13 @@ export default function Header() {
               onChange={handleSearchText}
             />
           </div>
-          <div className="nav-btn">
-            <SearchSvg Theme />
+          <div>
+            <div className="nav-btn">
+              <SearchSvg className="icon" Theme />
+            </div>
+            <div className="hover-text">
+              <span>검색</span>
+            </div>
           </div>
         </div>
         <div className="nav-right">
